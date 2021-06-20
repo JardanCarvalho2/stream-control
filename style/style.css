@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    border: transparent;
+}
+
+body {
+    background-color: #FEF9F3;
+}
+
+header {
+    background-color: #1E271F;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*
+nav .menu {
+    width: 1.2rem;
+    height: 20px;
+    background-color: #36D950;
+    margin-left: 10px;
+}
+*/
+
+nav>h2 {
+    color: #FFFFFF;
+}
+
+section {
+    font-size: 16px;
+    margin: 5vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+}
+
+section form {
+    margin: 0 auto;
+    padding: 50px 30px 50px 30px;
+    min-height: 380px;
+    min-width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    -webkit-box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    -moz-box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+form p:nth-child(1) {
+    font-size: 18px;
+}
+
+.input-container {
+    position: relative;
+    height: 45px;
+    margin: 20px;
+}
+
+.inputUser {
+    padding: 5px;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
+
+.inputUser:focus {
+    border: 2px solid #36D950;
+}
+
+.formLabel {
+    position: absolute;
+    left: .25rem;
+    top: .58rem;
+    padding: 0 .25rem;
+    transition: .3s;
+    pointer-events: none;
+}
+
+.inputUser:focus+.formLabel,
+.inputUser:valid~.formLabel {
+    top: -.5rem;
+    left: .4rem;
+    font-size: 12px;
+    color: #36D950;
+    background-color: #FFFFFF;
+}
+
+form input[type=submit] {
+    margin: 10px auto 15px auto;
+    width: 150px;
+    height: 43px;
+    font-size: 20px;
+    outline: none;
+    background-color: #36D950;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type=submit]:focus {
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    -webkit-box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    -moz-box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.bottomOptions {
+    text-align: center;
+    margin-top: 10px;
+    color: #36D950;
+}
